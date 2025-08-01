@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Style de Vie</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="logo">
+      <img src="images/logo.png" alt="Style de Vie Icon" class="favicon-img" />
+      <span>Style de Vie</span>
+    </div>
+    <div class="nav-container">
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="lifestyle.html">Lifestyle</a></li>
+          <li><a href="diet.html">Wellness</a></li>
+          <li><a href="#">Inspiration</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+      </nav>
+      <form class="search-form" action="#" method="get">
+        <input type="text" placeholder="Search..." name="q" />
+        <button type="submit">🔍</button>
+      </form>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- Replace this with your homepage sections -->
+    <section>
+      <h2>Welcome to Style de Vie</h2>
+      <!-- <p>Where we build lifestyle.</p> -->
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Style de Vie. All rights reserved.</p>
+      <p>Created by TEAM STYLE DE VIE</p>
+      <p><span class="quote">"LIVE LIFE YOUR WAY"</span></p>
+    </div>
+  </footer>
+<script>
+  document.querySelector('.search-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // prevent normal form submission
+
+    const query = this.querySelector('input[name="q"]').value.trim().toLowerCase();
+
+    // Routing logic based on keywords
+    if (query.includes('home')) {
+      window.location.href = 'index.html';
+    } else if (query.includes('wellness') || query.includes('diet')) {
+      window.location.href = 'diet.html';
+    } else if (query.includes('about')) {
+      window.location.href = 'aboutus.html';
+    } else if (query.includes('contact') || query.includes('footer')) {
+      document.querySelector('footer').scrollIntoView({ behavior: 'smooth' });
+    } else {
+      alert('No results found. Try: home, wellness, about, or contact.');
+    }
+  });
+</script>
+
+</body>
+</html>

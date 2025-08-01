@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style de Vie</title>
+
+  <!-- Favicon in browser tab -->
+  <link rel="icon" href="images/Logo.png" type="image/x-icon">
+
+  <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/diet.css">
+  <!--JavaScript-->
+  <script src="javascript/diet.js"></script> 
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="logo">
+      <img src="images/Logo.png" alt="Style de Vie Icon" class="favicon-img">
+      <span>Style de Vie</span>
+    </div>
+
+    <!-- NAVIGATION + SEARCH -->
+    <div class="nav-container">
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="lifestyle.html">Lifestyle</a></li>
+          <li><a href="diet.html">Wellness</a></li>
+          <li><a href="#">Inspiration</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+        </ul>
+      </nav>
+
+      <!-- SEARCH BAR -->
+      <form class="search-form" action="#" method="get">
+        <input type="text" placeholder="Search..." name="q" />
+        <button type="submit">🔍</button>
+      </form>
+    </div>
+  </header>
+
+    <main>
+        <!-- Main welcome section -->
+        <section class="main-section">
+            <div class="main-content">
+                <h1>Transform your life with healthy eating</h1>
+                <p>Discover personalized diets, recipes, and expert advice to help you achieve your health goals.</p>
+                <button class="btn main-btn">Explore Diets</button>
+            </div>
+        </section>
+
+        <!-- Section: Types of healthy diets -->
+        <section class="first-section" id="types-of-diet">
+            <h2 class="title">Types of Healthy Diet</h2>
+            <div class="plans-grid">
+                <div class="plan-card">
+                    <div class="plan-icon">
+                        <img src="images/oliveoil.png" class="icon">
+                    </div>
+                    <!-- Mediterranean Diet card -->
+                    <h3>Mediterranean Diet</h3>
+                    <p>It is a diet rich in olive oil, fish, fruits and vegetables that has positive effects on the prevention of cardiovascular diseases.</p>
+                    <ul class="plan-features">
+                        <li>Fish 3-4 times per week </li>
+                        <li>Extra virgin olive oil</li>
+                        <li>Fresh fruits and vegetables </li>
+                    </ul>
+                </div>
+                <!-- Ketogenic Diet card -->
+                <div class="plan-card">
+                    <div class="plan-icon">
+                        <img src="images/avocado.png" class="icon">
+                    </div>
+                    <h3>Ketogenic Diet</h3>
+                    <p>It is a low-carbohydrate and high-fat diet that offers many health benefits and helps to lose weight.</p>
+                    <ul class="plan-features">
+                        <li>70% healthy fats</li>
+                        <li>25% proteins</li>
+                        <li>5% carbohydrates</li>
+                    </ul>
+                </div>
+                <!-- Vegan Diet card -->
+                <div class="plan-card">
+                    <div class="plan-icon">
+                        <img src="images/plant.png" class="icon">
+                    </div>
+                    <h3>Vegan Diet</h3>
+                    <p>It is a plant-based diet, rich in fiber, vitamins and natural antioxidants.</p>
+                    <ul class="plan-features">
+                        <li> Legumes and whole grains</li>
+                        <li>Assorted fruits and vegetables</li>
+                        <li> Nuts and seeds</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+         <!-- Section: Healthy recipes with buttons to open modals -->
+        <section class="second-section recipes-section">
+            <h2 class="title">Healthy Recipes</h2>
+            <div class="recipes-grid">
+                <div class="recipe-card green-card">
+                    <div class="recipe-icon">
+                        <img src="images/mediterranean-salad.jpg" alt="Salad">
+                    </div>
+                    <h3>Mediterranean Salad</h3>
+                    <p>Fresh and nutritious with olives, tomato and feta cheese</p>
+                    <span class="prep-time">15 min</span>
+                    <button class="btn small-btn open-modal" data-modal="salad-recipe">View Recipe</button>
+                </div>
+
+                <div class="recipe-card brown-card">
+                    <div class="recipe-icon">
+                        <img src="images/salmon.jpg" alt="Salmon">
+                    </div>
+                    <h3>Baked Salmon</h3>
+                    <p>Rich in omega-3 with roasted vegetables</p>
+                    <span class="prep-time">25 min</span>
+                    <button class="btn small-btn open-modal" data-modal="salmon-recipe">View Recipe</button>
+                </div>
+
+                <div class="recipe-card green-card">
+                    <div class="recipe-icon">
+                        <img src="images/smoothie.jpg" alt="Smoothie">
+                    </div>
+                    <h3>Green Smoothie</h3>
+                    <p>Spinach, apple and ginger for energy</p>
+                    <span class="prep-time">5 min</span>
+                    <button class="btn small-btn open-modal" data-modal="smoothie-recipe">View Recipe</button>
+                </div>
+
+                <div class="recipe-card green-card">
+                    <div class="recipe-icon">
+                        <img src="images/toast.jpg" alt="Avocado">
+                    </div>
+                    <h3>Complete Avocado Toast</h3>
+                    <p>Whole wheat bread with avocado and seeds</p>
+                    <span class="prep-time">8 min</span>
+                    <button class="btn small-btn open-modal" data-modal="toast-recipe">View Recipe</button>
+                </div>
+
+                <div class="recipe-card brown-card">
+                    <div class="recipe-icon">
+                        <img src="images/acai.jpg" alt="Açai Bowl">
+                    </div>
+                    <h3>Açai Antioxidant Bowl</h3>
+                    <p>Natural antioxidants with fresh fruits</p>
+                    <span class="prep-time">7 min</span>
+                    <button class="btn small-btn open-modal" data-modal="acai-recipe">View Recipe</button>
+                </div>
+
+                <div class="recipe-card green-card">
+                    <div class="recipe-icon">
+                        <img src="images/rice.jpg" alt="Rice">
+                    </div>
+                    <h3>Brown Rice with Vegetables</h3>
+                    <p>Complete dish with protein and fiber</p>
+                    <span class="prep-time">28 min</span>
+                    <button class="btn small-btn open-modal" data-modal="rice-recipe">View Recipe</button>
+                </div>
+            </div>
+        </section>
+
+        <div id="salad-recipe" class="modal"> 
+            <div class="modal-content"> 
+                <span class="close-button">&times;</span> 
+                <h3>Mediterranean Salad</h3> 
+                <h4>Ingredients:</h4> 
+                <ul> 
+                    <li>2 large tomatoes cut into cubes</li> 
+                    <li>1 cucumber peeled and cut</li> 
+                    <li>1/2 red onion, thinly sliced</li> 
+                    <li>100g crumbled feta cheese</li> 
+                    <li>1/4 cup kalamata olives</li> 
+                    <li>3 tablespoons extra virgin olive oil</li>
+                    <li>1 tablespoon red wine vinegar</li>
+                    <li>Dried oregano and salt to taste</li>
+                </ul>
+                <h4>Preparation:</h4>
+                <ol>
+                    <li>Combine tomatoes, cucumber, and onion in a large bowl.</li>
+                    <li>Add the feta cheese and olives.</li>
+                    <li>Pour in the olive oil, vinegar, oregano, and salt.</li>
+                    <li>Mix gently.</li>
+                    <li>Let stand for 10 minutes before serving.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div id="salmon-recipe" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h3>Baked Salmon with Vegetables</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>4 salmon fillets (150g each)</li>
+                    <li>2 zucchini, sliced</li>
+                    <li>1 red pepper, sliced</li>
+                    <li>200g asparagus</li>
+                    <li>3 tablespoons olive oil</li>
+                    <li>2 lemons (juice and zest)</li>
+                    <li>Garlic, salt, pepper, and fresh herbs</li>
+                </ul>
+                <h4>Preparation:</h4>
+                <ol>
+                    <li>Preheat the oven to 200°C.</li>
+                    <li>Place the vegetables on a baking sheet with olive oil.</li>
+                    <li>Season the salmon with salt, pepper, and lemon juice.</li>
+                    <li>Cook for another 12-15 minutes until the salmon is cooked.</li>
+                    <li>Serve hot with the roasted vegetables.</li>
+                </ol> 
+            </div> 
+        </div> 
+
+        <div id="smoothie-recipe" class="modal"> 
+            <div class="modal-content"> 
+                <span class="close-button">&times;</span>
+                <h3>Energizing Green Smoothie</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>2 cups fresh spinach</li>
+                    <li>1 seedless green apple</li>
+                    <li>1/2 peeled cucumber</li>
+                    <li>1 piece of fresh ginger (2 cm)</li>
+                    <li>Juice of 1 lemon</li>
+                    <li>1 cup coconut water</li>
+                    <li>1 tablespoon chia seeds</li>
+                    <li>Ice to taste</li>
+                </ul>
+                <h4>Preparation:</h4>
+                <ol>
+                    <li>Wash the spinach well and chop it.</li>
+                    <li>Peel and chop the apple and cucumber.</li>
+                    <li>Add all ingredients to the blender.</li>
+                    <li>Blend until smooth.</li>
+                    <li>Serve immediately with ice.</li>
+                </ol>
+            </div>
+        </div>
+
+
+        <div id="toast-recipe" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h3>Complete Avocado Toast</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>2 slices of whole-wheat bread</li>
+                    <li>1 ripe avocado</li>
+                    <li>1 cherry tomato, sliced</li>
+                    <li>2 tablespoons of mixed seeds</li>
+                    <li>Juice of 1/2 lemon</li>
+                    <li>Sea salt and pepper</li>
+                    <li>Extra-virgin olive oil</li>
+                    <li>Arugula leaves (optional)</li>
+                </ul>
+                <h4>Preparation:</h4>
+                <ol>
+                    <li>Toast the bread until golden.</li>
+                    <li>Mash the avocado with lemon, salt, and pepper.</li>
+                    <li>Spread the mixture on the toast.</li>
+                    <li>Add cherry tomatoes and the seeds.</li>
+                    <li>Drizzle with olive oil and serve immediately.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div id="acai-recipe" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h3>Antioxidant Acai Bowl</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 package of frozen açai (100g)</li>
+                    <li>1/2 frozen banana</li>
+                    <li>1/4 cup blueberries</li>
+                    <li>2 tablespoons coconut milk</li>
+                    <li>Toppings: granola, shredded coconut, fresh fruit, kiwi</li>
+                    <li>Chia seeds</li>
+                    <li>Honey to taste</li>
+                </ul>
+                <h4>Preparation:</h4>
+                <ol>
+                    <li>Blend the açai, banana, and coconut milk.</li>
+                    <li>The mixture should be as thick as ice cream.</li>
+                    <li>Pour into a bowl.</li>
+                    <li>Garnish with fresh fruit and granola.</li>
+                    <li>Add chia seeds and a touch of honey.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div id="rice-recipe" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h3>Brown Rice with Vegetables</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 cup brown rice</li>
+                    <li>1 small eggplant</li>
+                    <li>1 zucchini, diced</li>
+                    <li>1 red and 1 yellow bell pepper</li>
+                    <li>1 small onion, chopped</li>
+                    <li>3 cloves of garlic</li> 
+                    <li>3 tablespoons of olive oil</li> 
+                    <li>Fresh herbs and spices</li>
+                </ul>
+                <h4>Preparation:</h4>
+                <ol>
+                    <li>Cook the brown rice according to instructions.</li>
+                    <li>Cut all the vegetables into uniform cubes.</li>
+                    <li>Sauté the vegetables in olive oil.</li>
+                    <li>Add the cooked rice and mix well.</li>
+                    <li>Season with fresh herbs and spices.</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Modals for recipes would go here (divs with class "modal") -->
+
+        <!-- Section: Expert tips -->
+        <section class="third-section tips-section">
+            <h2 class="title">Expert Advice</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="icon">
+                        <img src="images/Hydration.png" alt="Hydration">
+                    </div>
+                    <h3>Adequate Hydration</h3>
+                    <p>Drink at least 8 glasses of water a day. Hydration is key for metabolism and elimination of toxins.</p>
+                    <ul class="tip-details">
+                        <li>Start the day with a glass of water</li>
+                        <li>Add lemon for extra vitamin C </li>
+                        <li>Drink before you feel thirsty </li>
+                    </ul>
+                </div>
+                <div class="tip-card">
+                    <div class="icon">
+                        <img src="images/Hours.png" alt="Hours">
+                    </div>
+                    <h3>Regular Hours</h3>
+                    <p>Maintain regular meal times to optimize your metabolism and energy levels.</p>
+                    <ul class="tip-details">
+                        <li>Eat breakfast within the first hour</li>
+                        <li>Eat every 3-4 hours</li>
+                        <li>Dinner 3 hours before bedtime</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Weekly meal planner with buttons to switch plans -->
+        <section class="fourth-section meal-planner-section" id="meal-planner">
+            <h2 class="title">Weekly Meal Planner</h2>
+            <div class="planner-buttons">
+                <button class="btn planner-btn active" data-plan="mediterranean">Mediterranean Plan</button>
+                <button class="btn planner-btn" data-plan="keto">Keto Plan</button>
+                <button class="btn planner-btn" data-plan="vegan">Vegan Plan</button>
+                <button class="btn planner-btn" data-plan="balanced">Balance Plan</button>
+            </div>
+            <!-- Mediterranean plan details -->
+            <div class="weekly-planner-container">
+                <div id="plan-mediterranean" class="weekly-plan active-plan">
+                    <div class="day-card">
+                        <h4>Monday</h4>
+                        <p>Breakfast: Yogurt with honey and nuts</p>
+                        <p>Lunch: Salmon with salad</p>
+                        <p>Dinner: Lentils with vegetables</p>
+                    </div>
+                    <div class="day-card">
+                        <h4>Tuesday</h4>
+                        <p>Breakfast: Toast with tomato</p>
+                        <p>Lunch: Greek salad</p>
+                        <p>Dinner: Baked fish</p>
+                    </div>
+                    <div class="day-card">
+                        <h4>Wednesday</h4>
+                        <p>Breakfast: Fruit smoothie</p>
+                        <p>Lunch: Whole wheat pasta</p>
+                        <p>Dinner: Ratatouille</p>
+                    </div>
+                    <div class="day-card">
+                        <h4>Thursday</h4>
+                        <p>Breakfast: Oatmeal with fruit</p>
+                        <p>Lunch: Mediterranean Wrap</p>
+                        <p>Dinner: Vegetable soup</p>
+                    </div>
+                    <div class="day-card">
+                        <h4>Friday</h4>
+                        <p>Breakfast: Eggs with avocado</p>
+                        <p>Lunch: Quinoa with vegetables</p>
+                        <p>Dinner: Tuna with salad</p>
+                    </div>
+                    <div class="day-card">
+                        <h4>Saturday</h4>
+                        <p>Breakfast: Acai bowl</p>
+                        <p>Lunch: Whole wheat pizza</p>
+                        <p>Dinner: Vegetable paella</p>
+                    </div>
+                    <div class="day-card">
+                        <h4>Sunday</h4>
+                        <p>Breakfast: Oatmeal pancakes</p>
+                        <p>Lunch: Full salad</p>
+                        <p>Dinner: Chickpea stew</p>
+                    </div>
+                </div>
+                <!-- Keto plan details -->
+                <div id="plan-keto" class="weekly-plan">
+                    <div class="day-card">
+                        <h4>Monday</h4>
+                        <p>Breakfast: Eggs and bacon</p>
+                        <p>Lunch: Salad with chicken</p>
+                        <p>Dinner: Beef with broccoli</p>
+                    </div>
+                    <div class="day-card">
+                        <h4>Tuesday</h4>
+                        <p>Breakfast: Avocado with egg</p>
+                        <p>Lunch: Salmon with spinach</p>
+                        <p>Dinner: Cheese with walnuts</p>
+                    </div>
+                    <div class="day-card">
+                        <h4>Wednesday</h4>
+                        <p>Breakfast: Coffee with MCT oil</p>
+                        <p>Lunch: Lettuce wrap</p>
+                        <p>Dinner: Baked chicken</p>
+                    </div>
+                    <div class="day-card">
+                        <h4>Thursday</h4>
+                        <p>Breakfast: Eggs and bacon</p>
+                        <p>Lunch: Caesar Salad</p>
+                        <p>Dinner: Fish with butter</p>
+                    </div>
+                    <div class="day-card">
+                        <h4>Friday</h4>
+                        <p>Breakfast: Keto smoothie</p>
+                        <p>Lunch: Cheese with ham</p>
+                        <p>Dinner: Steak with vegetables</p>
+                    </div>
+                    <div class="day-card">
+                        <h4>Saturday</h4>
+                        <p>Breakfast: Cheese omelette</p>
+                        <p>Lunch: Tuna salad</p>
+                        <p>Dinner: Chicken with avocado</p>
+                    </div>
+                    <div class="day-card">
+                        <h4>Sunday</h4>
+                        <p>Breakfast: Full breakfast</p>
+                        <p>Lunch: Keto Wrap</p>
+                        <p>Dinner: Salmon with asparagus</p>
+                    </div>
+                </div>
+                <!-- Vegan plan details -->
+                <div id="plan-vegan" class="weekly-plan">
+                    <div class="day-card">
+                        <h4>Monday</h4>
+                        <p>Breakfast: Green smoothie</p>
+                        <p>Lunch: Quinoa bowl</p>
+                        <p>Dinner: Lentil curry</p>
+                    </div>
+                    <div class="day-card">
+                        <h4>Tuesday</h4>
+                        <p>Breakfast: Oatmeal pancakes</p>
+                        <p>Lunch: Chickpea salad</p>
+                        <p>Dinner: Pasta with pesto</p>
+                    </div>
+                    <div class="day-card">
+                        <h4>Wednesday</h4>
+                        <p>Breakfast: Oatmeal with fruit</p>
+                        <p>Lunch: Hummus wrap</p>
+                        <p>Dinner: Vegetable soup</p>
+                    </div>
+                    <div class="day-card">
+                        <h4>Thursday</h4>
+                        <p>Breakfast: Avocado toast</p>
+                        <p>Lunch: Rice bowl</p>
+                        <p>Dinner: Bean Chili</p>
+                    </div>
+                    <div class="day-card">
+                        <h4>Friday</h4>
+                        <p>Breakfast: Acai bowl</p>
+                        <p>Lunch: Quinoa salad</p>
+                        <p>Dinner: Pasta with vegetables</p>
+                    </div>
+                    <div class="day-card">
+                        <h4>Saturday</h4>
+                        <p>Breakfast: Vegan tortillas</p>
+                        <p>Lunch: Bean burrito</p>
+                        <p>Dinner: Vegetable stew</p>
+                    </div>
+                    <div class="day-card">
+                        <h4>Sunday</h4>
+                        <p>Breakfast: Protein shake</p>
+                        <p>Lunch: Full salad</p>
+                        <p>Dinner: Chickpea curry</p>
+                    </div>
+                </div>
+                <!-- Balanced plan details -->
+                <div id="plan-balanced" class="weekly-plan">
+                    <div class="day-card">
+                        <h4>Monday</h4>
+                        <p>Breakfast: Oatmeal with fruit</p>
+                        <p>Lunch: Chicken with salad</p>
+                        <p>Dinner: Fish with vegetables</p>
+                    </div>
+                    <div class="day-card">
+                        <h4>Tuesday</h4>
+                        <p>Breakfast: Scrambled eggs</p>
+                        <p>Lunch: Quinoa salad</p>
+                        <p>Dinner: Lentil soup</p>
+                    </div>
+                    <div class="day-card">
+                        <h4>Wednesday</h4>
+                        <p>Breakfast: Protein smoothie</p>
+                        <p>Lunch: Chicken wrap</p>
+                        <p>Dinner: Vegetable curry</p>
+                    </div>
+                    <div class="day-card">
+                        <h4>Thursday</h4>
+                        <p>Breakfast: Whole wheat pancakes</p>
+                        <p>Lunch: Nutritious Bowl</p>
+                        <p>Dinner: Baked salmon</p>
+                    </div>
+                    <div class="day-card">
+                        <h4>Friday</h4>
+                        <p>Breakfast: Full toast</p>
+                        <p>Lunch: Mixed salad</p>
+                        <p>Dinner: Chicken with rice</p>
+                    </div>
+                    <div class="day-card">
+                        <h4>Saturday</h4>
+                        <p>Breakfast: Fruit bowl</p>
+                        <p>Lunch: Healthy pizza</p>
+                        <p>Dinner: Vegetable stew</p>
+                    </div>
+                    <div class="day-card">
+                        <h4>Sunday</h4>
+                        <p>Breakfast: Full breakfast</p>
+                        <p>Lunch: Gourmet salad</p>
+                        <p>Dinner: Balanced dish</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Style de Vie. All rights reserved.</p>
+      <p>Created by TEAM STYLE DE VIE | <span class="quote">"LIVE LIFE YOUR WAY"</span></p>
+    </div>
+    </footer>
+    <script>
+  document.querySelector('.search-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // prevent normal form submission
+
+    const query = this.querySelector('input[name="q"]').value.trim().toLowerCase();
+
+    // Routing logic based on keywords
+    if (query.includes('home')) {
+      window.location.href = 'index.html';
+    } else if (query.includes('wellness') || query.includes('diet')) {
+      window.location.href = 'diet.html';
+    } else if (query.includes('about')) {
+      window.location.href = 'aboutus.html';
+    } else if (query.includes('contact') || query.includes('footer')) {
+      document.querySelector('footer').scrollIntoView({ behavior: 'smooth' });
+    } else {
+      alert('No results found. Try: home, wellness, about, or contact.');
+    }
+  });
+</script>
+
+</body>
+</html>
+
+
+
+
