@@ -1,0 +1,452 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY BASE */
+body {
+  font-family: "Spectral", serif;
+  background-color: #f7f6f3;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HEADER */
+.site-header {
+  background-color: #777b61;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ccc;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.favicon-img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-family: "Niconne", cursive;
+  color: white;
+}
+
+/* NAVIGATION + SEARCH */
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar .nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  color: #ccc;
+  border-bottom: 2px solid white;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.search-form input {
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  background: transparent;
+}
+
+.search-form button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px;
+}
+
+
+/* MAIN */
+main {
+  margin: 0;
+}
+
+.section {
+  width: 100%;
+  padding: 80px 0;
+}
+
+.content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.about {
+  background-color: #D2B79E;
+}
+
+.AboutUs {
+  background-color: #ffffff;
+}
+
+.Values {
+  background-color: #f8f3eb;
+}
+
+.Team {
+  background-color: #ffffff;
+}
+
+.mission-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  text-align: left;
+}
+
+.mission-text-content {
+  flex: 2;
+  max-width: 60%;
+}
+
+.mission-logo {
+  display: flex;
+  padding: 20px;
+  background-color: #EFE9E0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.mission-logo img {
+  max-width: 380px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.about h2 {
+  margin-bottom: 10px;
+  font-size: 55px;
+}
+
+.about p {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.Mission h2 {
+  text-align: center;
+  color: #A4866A;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.Values .title {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #A4866A;
+  font-size: 40px;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-align: center;
+  color: #A4866A;
+  font-size: 40px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Transition for value cards */
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 400px;
+  min-width: 280px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for lift effect */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Move the card upward */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Deeper shadow */
+}
+
+/* Transition for diet plan cards */
+.plan-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Transition for recipe cards */
+.recipe-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Transition for tip cards */
+.tip-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.icon {
+  margin-bottom: 15px;
+}
+
+.Team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+/* Transition for team member cards */
+.member {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: calc(33.33% - 20px);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.imgmember {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 15px;
+  border: 2px solid #A4866A;
+}
+
+.member h4 {
+  margin-bottom: 5px;
+  color: #2e2e2e;
+  font-size: 1.2rem;
+}
+
+.role {
+  font-weight: 500;
+  color: #A4866A;
+  font-size: 0.9rem;
+}
+
+/* FOOTER */
+.site-footer {
+  background-color: #777b61;
+  text-align: center;
+  padding: 40px 20px 30px;
+  border-top: 2px solid #ccc;
+}
+
+.footer-content {
+  font-size: 10px;
+  color: #f4f4f4;
+}
+
+.footer-content .quote {
+  font-style: italic;
+  font-family: "Spectral", serif;
+}
+
+@media (max-width: 1024px) {
+  .site-header {
+    padding: 15px 20px;
+  }
+  .nav-container {
+    gap: 15px;
+  }
+  .navbar .nav-menu {
+    gap: 15px;
+  }
+
+  .content {
+    max-width: 800px;
+  }
+
+  .card {
+    width: calc(50% - 20px);
+  }
+
+  .member {
+    width: calc(33.33% - 20px);
+    max-width: 280px;
+  }
+
+  .mission-flex-container {
+    flex-direction: column;
+  }
+
+  .mission-text-content {
+    max-width: 100%;
+  }
+
+  .mission-logo {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .search-form {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .about h2 {
+    font-size: 40px;
+  }
+
+  .about p {
+    font-size: 18px;
+  }
+
+  .section {
+    padding: 30px 0;
+  }
+
+  .content {
+    padding: 0 15px;
+  }
+
+  .cards,
+  .Team-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card,
+  .member {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .mission-logo img {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .favicon-img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .nav-menu li a {
+    font-size: 0.9rem;
+  }
+
+  .about h2 {
+    font-size: 30px;
+  }
+
+  .about p {
+    font-size: 16px;
+  }
+
+  .Mission h2,
+  .title,
+  h2 {
+    font-size: 24px;
+  }
+
+  .card p,
+  .member p {
+    font-size: 0.9rem;
+  }
+
+  .mission-logo img {
+    max-width: 100px;
+  }
+}
